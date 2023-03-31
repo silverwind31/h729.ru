@@ -27,16 +27,16 @@ try {
     //Server settings
     $mail->SMTPDebug = false;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.timeweb.ru';                     //Set the SMTP server to send through
+    $mail->Host       = '';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'order@h729.ru';                     //SMTP username
-    $mail->Password   = '6rDvz5Sn';                               //SMTP password
+    $mail->Username   = '';                     //SMTP username
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('order@h729.ru', '注意力！新命令！');
-    $mail->addAddress('order@h729.ru');     //Add a recipient
+    $mail->setFrom('', '注意力！新命令！');
+    $mail->addAddress('');     //Add a recipient
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
